@@ -6,7 +6,7 @@ int solution(int n);
 
 int main()
 {
-	// 자릿수 더하기 (프로그래머스 Lv 1)
+	// 자릿수 더하기
 	int result = 0;
 	int iptA;
 	cin >> iptA;

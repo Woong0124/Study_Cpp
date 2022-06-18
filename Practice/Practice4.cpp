@@ -8,7 +8,7 @@ int AddNum(vector<int> iVec);
 // 같은 수를 제외한 모든 수의 합
 int main()
 {
-	vector<int> iVec = { 5,5,5,10,9,5,8,0 };
+	vector<int> iVec = { 5,5,6,5,8,4,5,4 };
 	AddNum(iVec);
 
 	// ** 생각 정리 **
@@ -31,16 +31,15 @@ int AddNum(vector<int> iVec)
 {
 	vector<int*> pVec;
 	int iResult = 0;
-	int iCount = 0;
 
 	for (int i = 0; i < iVec.size(); ++i)
 	{
-		for (int j = 1; (j + iCount) < iVec.size(); ++j)
+		for (int j = 1; (j + i) < iVec.size(); ++j)
 		{
-			if (iVec[i] == iVec[(j + iCount)])	// i번째 숫자를 나머지 수와 비교하여 같으면 주소값을 저장
+			if (iVec[i] == iVec[(j + i)])	// i번째 숫자를 나머지 수와 비교하여 같으면 주소값을 저장
 			{
 				pVec.push_back(&iVec[i]);
-				pVec.push_back(&iVec[(j + iCount)]);
+				pVec.push_back(&iVec[(j + i)]);
 			}
 		}
 		if (2 <= pVec.size())	// 저장해둔 주소값이 가리키는 곳의 수들을 0으로 초기화
@@ -52,7 +51,6 @@ int AddNum(vector<int> iVec)
 		}
 		iResult += iVec[i];
 		pVec.clear();	// pVec의 모든 데이터, 사이즈를 0으로 초기화
-		++iCount;
 	}
 	cout << iResult;
 	return iResult;

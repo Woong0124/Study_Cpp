@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // 직사각형 별찍기 (프로그래머스 Lv 1)
+    // 직사각형 별찍기
     int iptA;
     int iptB;
     char asterisk = '*';
