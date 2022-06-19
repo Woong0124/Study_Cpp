@@ -4,7 +4,7 @@ using namespace std;
 
 int AbsoluteValue(int iValue);
 
-// [ 과제 2 ]   절대값 구하기
+// 절대값 구하기
 int main()
 {
     int iptA = 0;

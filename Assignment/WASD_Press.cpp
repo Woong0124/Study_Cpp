@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// [ 과제 1 ]   WASD 눌렀을때의 X, Y 값 증감 
+// WASD 눌렀을때의 X, Y 값 증감 
 int main()
 {
     int x = 0;

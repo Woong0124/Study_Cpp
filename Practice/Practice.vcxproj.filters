@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Practice1.cpp">
+    <ClCompile Include="BasicStudy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Practice2.cpp">
+    <ClCompile Include="PrimeNum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Practice3.cpp">
+    <ClCompile Include="HighNum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Practice4.cpp">
+    <ClCompile Include="DiffrentSumNum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

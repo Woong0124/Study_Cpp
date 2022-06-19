@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CodingTest1.cpp">
+    <ClCompile Include="RectangleStar.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CodingTest2.cpp">
+    <ClCompile Include="AddDigits.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CodingTest3.cpp">
+    <ClCompile Include="PrimeNum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CodingTest4.cpp">
+    <ClCompile Include="OmissionNumAdd.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
