@@ -7,6 +7,7 @@ int PrimeNum(int num);
 
 int main()
 {
+	// 진행중	// 최적화를 해야한다 !!
 	// 소수 찾기(1부터 입력받은 숫자 사이에 있는 소수의 개수)
 	int result = 0;
 	result = PrimeNum(0);
@@ -20,7 +21,7 @@ int PrimeNum(int num)
 	cout << "숫자를 입력해 주세요. " << endl;
 	cin >> num;
 
-	while (num <= 1)	// a가 1보다 작거나 같으면 재입력 받기
+	while (num <= 1)	// num이 1보다 작거나 같으면 재입력 받기
 	{
 		cout << "숫자를 다시 입력해 주세요. " << endl;
 		cin >> num;
@@ -40,8 +41,12 @@ int PrimeNum(int num)
 				{
 					++iCount;	// 나눠지는 수 카운팅
 				}
+				if (iCount >= 2)
+				{
+					break;
+				}
 			}
-			if (iCount == 1)	// 나눠지는 수가 한번이면 자기 자신밖에 나눠지지 않는다. 즉 소수이다.
+			if (iCount == 1)	// 나눠지는 수가 한번이면 자기 자신밖에 나눠지지 않는다. 즉 소수
 			{
 				cout << i << " ";
 				++result;
