@@ -29,6 +29,7 @@ int PrimeNum(int num)
 	if (num == 2)
 	{
 		cout << "2 의 소수는 2 입니다." << endl;
+		result = 1;
 	}
 	else if (num > 2)
 	{
