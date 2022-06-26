@@ -33,7 +33,7 @@ int PrimeNum(int num)
 	}
 	else if (num > 2)
 	{
-		for (int i = 2; i <= num; ++i)	// 소수 구하기
+		for (int i = 3; i <= num; i+=2)	// 소수 구하기
 		{
 			iCount = 0;
 			for (int j = 2; j <= i; ++j)
@@ -41,6 +41,7 @@ int PrimeNum(int num)
 				if (i % j == 0)	// 나머지값이 0이면 나눠지는 수.
 				{
 					++iCount;	// 나눠지는 수 카운팅
+					
 				}
 				if (iCount >= 2)
 				{
@@ -52,8 +53,8 @@ int PrimeNum(int num)
 				cout << i << " ";
 				++result;
 			}
-		}
-		cout << endl;
+		}		cout << endl;
+
 	}
 	cout << "총 갯수는 " << result << " 입니다" << endl;
 	return result;
