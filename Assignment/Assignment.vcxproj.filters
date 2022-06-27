@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Human">
+      <UniqueIdentifier>{979e64bb-3cf6-42c7-a5f6-f6ad21853a47}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WASD_Press.cpp">
@@ -21,5 +24,16 @@
     <ClCompile Include="AbsoluteValue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="PracClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>헤더 파일\Human</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Human.h">
+      <Filter>헤더 파일\Human</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
